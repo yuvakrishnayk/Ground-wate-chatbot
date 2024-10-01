@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "tag": "water level",
+      "patterns": [
+        "current water level",
+        "Tell me about the water levels"
+      ],
+      "responses": [
+        "The water level in your area is 15 meters below ground level."
+      ]
+    },
+    {
+      "tag": "hydrogeological_scenario",
+      "patterns": [
+        "What is the hydrogeological scenario?",
+        "Tell me about the hydrogeology here"
+      ],
+      "responses": [
+        "The hydrogeological scenario indicates a mix of confined and unconfined aquifers."
+      ]
+    },
+    {
+      "tag": "noc_conditions",
+      "patterns": ["How to obtain NOC?", "What are the conditions for NOC?"],
+      "responses": [
+        "To obtain an NOC for groundwater extraction, you need to apply with relevant hydrogeological reports."
+      ]
+    },
+    {
+      "tag": "report_generation",
+      "patterns": [
+        "Generate groundwater report",
+        "Can you provide a report on groundwater?"
+      ],
+      "responses": ["Generating a report for your area. Please wait..."]
+    }
+  ]
+}
