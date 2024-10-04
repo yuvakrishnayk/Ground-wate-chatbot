@@ -1,0 +1,147 @@
+/* General body style */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e1e8ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Chat container styling */
+.chat-container {
+  width: 450px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Chatbox style */
+.chat-box {
+  height: 450px;
+  padding: 20px;
+  background: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.chat-log {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling each message */
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Bot message style */
+.bot {
+  justify-content: flex-start;
+}
+
+.bot .avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.bot .text {
+  background-color: #f1f0f0;
+  color: #555;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0px;
+  max-width: 65%;
+}
+
+/* User message style */
+.user {
+  justify-content: flex-end;
+}
+
+.user .avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.user .text {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0px 10px;
+  max-width: 65%;
+}
+
+/* Chat input styling */
+.chat-input {
+  display: flex;
+  padding: 20px;
+  background-color: #f1f5f8;
+  border-top: 1px solid #eee;
+  position: relative;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-right: 10px;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.chat-input input:focus {
+  border-color: #007bff;
+}
+
+.chat-input button {
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Avatar for the bot and user */
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin: 5px;
+
+}
